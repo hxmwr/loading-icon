@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body style="background: white;">
+  <svg style="width: 30px;height: 30px" width="600" height="600" viewBox="-110 0 240 240">
+    <style>
+      .stroke {
+        transform-origin: 10px 120px;
+        fill: #000;
+      }
+      .loading-icon {
+        animation-name: loading;
+        animation-duration: 0.9s;
+        animation-iteration-count: infinite;
+        animation-timing-function: steps(12);
+        transform-origin: 10px 120px;
+      }
+      use.stroke1 {
+        transform: rotateZ(0deg);
+        opacity: 0.6;
+      }
+      use.stroke2 {
+        transform: rotateZ(30deg);
+        opacity: 0.3;
+      }
+      use.stroke3 {
+        transform: rotateZ(60deg);
+        opacity: 0.3;
+      }
+      use.stroke4 {
+        transform: rotateZ(90deg);
+        opacity: 0.2;
+      }
+      use.stroke5 {
+        transform: rotateZ(120deg);
+        opacity: 0.1;
+      }
+      use.stroke6 {
+        transform: rotateZ(150deg);
+        opacity: 0.1;
+      }
+      use.stroke7 {
+        transform: rotateZ(180deg);
+        opacity: 0.1;
+      }
+      use.stroke8 {
+        transform: rotateZ(210deg);
+        opacity: 0.1;
+      }
+      use.stroke9 {
+        transform: rotateZ(240deg);
+        opacity: 0.1;
+      }
+      use.stroke10 {
+        transform: rotateZ(270deg);
+        opacity: 0.2;
+      }
+      use.stroke11 {
+        transform: rotateZ(300deg);
+        opacity: 0.3;
+      }
+      use.stroke12 {
+        transform: rotateZ(330deg);
+        opacity: 0.3;
+      }
+      @keyframes loading {
+        0% {
+          transform: rotateZ(0deg);
+        }
+        100% {
+          transform: rotateZ(360deg);
+        }
+      }
+    </style>
+    <defs>
+      <path id="stroke" d="M0,10 A10 10 0 0 1 20 10 V60 A10 10 0 0 1 0 60"></path>
+    </defs>
+    <g class="loading-icon">
+      <use href="#stroke" class="stroke stroke1"></use>
+    <use href="#stroke" class="stroke stroke2"></use>
+    <use href="#stroke" class="stroke stroke3"></use>
+    <use href="#stroke" class="stroke stroke4"></use>
+    <use href="#stroke" class="stroke stroke5"></use>
+    <use href="#stroke" class="stroke stroke6"></use>
+    <use href="#stroke" class="stroke stroke7"></use>
+    <use href="#stroke" class="stroke stroke8"></use>
+    <use href="#stroke" class="stroke stroke9"></use>
+    <use href="#stroke" class="stroke stroke10"></use>
+    <use href="#stroke" class="stroke stroke11"></use>
+    <use href="#stroke" class="stroke stroke12"></use>
+    </g>
+  </svg>
+</body>
+</html>
